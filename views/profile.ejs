@@ -1,0 +1,59 @@
+<div class="loginSignup">
+    <h1 class="testloop">[ TESTLOOP.COM ]</h1>
+    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+</div>
+<div class="page-header">
+</div>
+
+<div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="well">
+
+            <p class="profilePara">
+                <strong class="uname">Name</strong>: <%= user.name %><br>
+                <!-- <strong>id</strong>: <%= user._id %><br> -->
+                <strong class="uemail">email</strong>: <%= user.email %><br>
+
+                <button class="delaccount btn btn-danger" type="delete">Delete Account</button>
+                <a href="/profile/edit" class="updateaccount btn btn-info">Edit Account</a>
+            </p>
+            <!-- This could be used for future functionality -->
+            <div class="dashboard">
+              <h3>Project specs</h3>
+              <ul>
+                <li>Technologies</li>
+                <li>Languages</li>
+                <li>Third Party Tech</li>
+                <li>Packages</li>
+                <li>Database</li>
+                <li>Deployment Notes</li>
+                <li>ReadMe</li>
+              </ul>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+//________This is for deleting user account from db.______________
+            var $delAccount = $('.delaccount')
+            $delAccount.on('click', function(evt){
+              // evt.preventDefault()
+              console.log(evt)
+              var currentUserId = '<%= user._id %>'
+              console.log(currentUserId);
+              $.ajax({
+                method: 'DELETE',
+                url: `/users/${currentUserId}`
+              }).done(function(data){
+                console.log(data)
+                window.location = window.location.origin + '/signup'
+              })
+
+              console.log('delete account button clicked')
+            })
+</script>

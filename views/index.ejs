@@ -1,0 +1,150 @@
+<div class="loginSignup">
+    <a href="/login" class="btn btn-default">Login</a>
+    <a href="/signup" class="btn btn-default">Signup</a>
+    <h1 class="testloop">[ TESTLOOP.COM ]</h1>
+</div>
+<h1 class="tagline">We help launch projects</h1>
+<hr class="hr">
+<div class="para">
+  <p>
+    Our team of developers will make your vision come to life.
+    <br>
+    We specialize in the following technologies.
+  </p>
+</div>
+<div class="mobile">
+  <h1 class="h1mobile">Mobile</h1>
+</div>
+<div class="web">
+  <h1 class='h1web'>Web</h1>
+</div>
+<div class="game">
+  <h1 class='h1game'>Game</h1>
+</div>
+<div class="tech">
+  <h1 class='h1other'>Tech</h1>
+</div>
+<!-- This div will is hidden until on clikc event see JScode below -->
+<div class="containerMobile containerAll ">
+  <p class="mobilePara containerAll">
+    Our Mobile Development team can create any IOS or Android app.
+    <br>
+    The overall design and intuitive functionality will create the ulitmate user experience.
+    <br>
+    Please contact us for inquiries on making your Mobile App idea a reality.
+    <br>
+    <a href="mailto:inquires@testloop.com">inquiries@testloop.com</a>
+  </p>
+</div>
+<!-- This div will is hidden until on clikc event see JScode below -->
+<div class="containerWeb containerAll ">
+  <p class="webPara containerAll">
+    Our Web Development team can create any web based application.
+    <br>
+    Seamless full stack design, functionality and data management.
+    <br>
+    Please contact us for inquiries on making your Web App idea a reality.
+    <br>
+    <a href="mailto:inquires@testloop.com">inquiries@testloop.com</a>
+  </p>
+</div>
+<!-- This div will is hidden until on clikc event see JScode below -->
+<div class="containerGame containerAll">
+  <p class="gamePara containerAll">
+    Our Game Development team can create any game application.
+    <br>
+    Your game will have the design and functionality to keep users playing it forever.
+    <br>
+    Please contact us for inquiries on making your Game App idea a reality.
+    <br>
+    <a href="mailto:inquires@testloop.com">inquiries@testloop.com</a>
+  </p>
+</div>
+<!-- This div will is hidden until on clikc event see JScode below -->
+<div class="containerTech containerAll">
+  <p class="techPara containerAll">
+    Our Tech Development team can modify your current application.
+    <br>
+    Need a technology upgrade on your mobile, web or game app?
+    <br>
+    Please contact us for inquiries on upgrading your technology.
+    <br>
+    <a href="mailto:inquires@testloop.com">inquiries@testloop.com</a>
+  </p>
+</div>
+
+<script type="text/javascript">
+  // variables for Mobile, Web, Game and Tech squares before toggleClass
+  var $containerMobile = $('.containerMobile')
+  var $containerWeb = $('.containerWeb')
+  var $containerGame = $('.containerGame')
+  var $containerTech = $('.containerTech')
+
+  // variable for all containers static and active (hidden)
+  var $containerAll = $('.containerAll')
+
+  // variables for paragraphs in Mobile, Web, Game and Tech squares
+  var $mobilePara = $('.mobilePara')
+  var $webPara = $('.webPara')
+  var $gamePara = $('.gamePara')
+  var $techPara = $('.techPara')
+
+  // variables for Mobile, Web, Game and Tech squares for on click
+  var $mobile = $('.mobile')
+  var $web = $('.web')
+  var $game = $('.game')
+  var $tech = $('.tech')
+
+// __________________ Mobile button toggle function ____________________________
+  $mobile.on('click', function(){
+      $containerAll.hide()
+      $containerMobile.show()
+      $mobilePara.show()
+      $containerMobile.toggleClass('containerMobile-active')
+      $mobilePara.toggleClass('mobilePara-active')
+      setTimeout(function() {
+        $containerMobile.removeClass('containerMobile-active')
+        $mobilePara.removeClass('mobilePara-active')
+      }, 15000);
+      console.log("Mobile clicked")
+    })
+// _________________ Web button toggle function ________________________________
+    $web.on('click', function(){
+        $containerAll.hide()
+        $containerWeb.show()
+        $webPara.show()
+        $containerWeb.toggleClass('containerWeb-active')
+        $webPara.toggleClass('webPara-active')
+        setTimeout(function() {
+          $containerWeb.removeClass('containerWeb-active')
+          $webPara.removeClass('webPara-active')
+        }, 15000);
+        console.log("Web clicked")
+      })
+// _________________ Game button toggle function ________________________________
+      $game.on('click', function(){
+          $containerAll.hide()
+          $containerGame.show()
+          $gamePara.show()
+          $containerGame.toggleClass('containerGame-active')
+          $gamePara.toggleClass('gamePara-active')
+          setTimeout(function() {
+            $containerGame.removeClass('containerGame-active')
+            $gamePara.removeClass('gamePara-active')
+          }, 15000);
+          console.log("Game clicked")
+        })
+// _________________ Tech button toggle function ________________________________
+        $tech.on('click', function(){
+            $containerAll.hide()
+            $containerTech.show()
+            $techPara.show()
+            $containerTech.toggleClass('containerTech-active')
+            $techPara.toggleClass('techPara-active')
+            setTimeout(function() {
+              $containerTech.removeClass('containerTech-active')
+              $techPara.removeClass('techPara-active')
+            }, 15000);
+            console.log("Tech clicked")
+          })
+</script>

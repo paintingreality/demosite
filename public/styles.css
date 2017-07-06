@@ -1,0 +1,304 @@
+/*CSS for tagline and opening paragraph*/
+.tagline{
+  margin-top: 100px;
+
+  color: white;
+  text-align: center;
+}
+.para{
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+
+}
+.hr{
+  border-color: #8D0072;
+  border-style: solid;
+}
+.h1 {
+  color: white;
+}
+/*index.ejs squares for mobile, web, game, tech*/
+.mobile{
+  background: rgba(100, 0, 100, 0.5);
+  color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  border-color: #8D0072;
+  border-style: solid;
+  display: inline-block;
+  margin: 6%;
+}
+.mobile:hover{
+  background: rgba(200, 0, 200, 0.5);
+  box-shadow:
+        0 0 60px 10px #fff,  /* inner white */
+        0 0 100px 30px #f0f; /* outer magenta */
+        /*x, y, blur size, spread size, color*/
+}
+.h1mobile{
+  text-align: center;
+  margin: auto;
+  line-height:150px;
+  vertical-align: middle;
+}
+.web{
+  background: rgba(100, 0, 100, 0.5);
+  color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  border-color: #8D0072;
+  border-style: solid;
+  display: inline-block;
+  /*float: right;*/
+  margin: 5%;
+}
+.web:hover{
+  background: rgba(200, 0, 200, 0.5);
+  box-shadow:
+        0 0 60px 10px #fff,  /* inner white */
+        0 0 100px 30px #f0f; /* outer magenta */
+}
+.h1web{
+  text-align: center;
+  margin: auto;
+  line-height:150px;
+  vertical-align: middle;
+}
+.game{
+  background: rgba(100, 0, 100, 0.5);
+  color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  border-color: #8D0072;
+  border-style: solid;
+  display: inline-block;
+  /*float: right;*/
+  margin: 6%;
+}
+.game:hover{
+  background: rgba(200, 0, 200, 0.5);
+  box-shadow:
+        0 0 60px 10px #fff,  /* inner white */
+        0 0 100px 30px #f0f; /* outer magenta */
+}
+.h1game{
+  text-align: center;
+  margin: auto;
+  line-height:150px;
+  vertical-align: middle;
+}
+.tech{
+  background: rgba(100, 0, 100, 0.5);
+  color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  border-color: #8D0072;
+  border-style: solid;
+  display: inline-block;
+  /*float: right;*/
+  margin: 5%;
+}
+.tech:hover{
+  background: rgba(200, 0, 200, 0.5);
+  box-shadow:
+        0 0 60px 10px #fff,  /* inner white */
+        0 0 100px 30px #f0f; /* outer magenta */
+}
+.h1other{
+  text-align: center;
+  margin: auto;
+  line-height:150px;
+  vertical-align: middle;
+}
+
+/*background image*/
+.bg {
+  background-image: url('http://i.imgur.com/HQPHqXi.jpg');
+  background-size: cover;
+
+}
+/*index.ejs index, signup and testloop.com*/
+.loginSignup{
+  background: rgba(100, 0, 100, 0.3);
+  height: 35px;
+  width: inherit;
+  display: inline-block;
+  float: left;
+}
+.testloop{
+  color: white;
+  display: inline;
+  float: right;
+  margin: auto;
+  font-size: 25px;
+}
+
+
+/*CSS for Mobile square and text when it become active on click*/
+.containerMobile-active{
+  width: 100%;
+  height: 300px;
+  background: rgba(100, 0, 100, 0.5);
+  border-radius: 25px;
+  box-shadow:
+        0 0 100px 30px #fff,  /* outer white */
+        0 0 100px 60px #f0f; /* outer magenta */
+}
+.mobilePara{
+  font-size: 0px;
+}
+.mobilePara-active{
+  margin: auto;
+  padding-top: 100px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+/*CSS for Web square and text when it become active on click*/
+.containerWeb-active{
+  width: 100%;
+  height: 300px;
+  background: rgba(100, 0, 100, 0.5);
+  border-radius: 25px;
+  box-shadow:
+        0 0 100px 30px #fff,  /* outer white */
+        0 0 100px 60px #f0f; /* outer magenta */
+}
+.webPara{
+  font-size: 0px;
+}
+.webPara-active{
+  margin: auto;
+  padding-top: 100px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*CSS for Game square and text when it become active on click*/
+.containerGame-active{
+  width: 100%;
+  height: 300px;
+  background: rgba(100, 0, 100, 0.5);
+  border-radius: 25px;
+  box-shadow:
+        0 0 100px 30px #fff,  /* inner white */
+        0 0 100px 60px #f0f; /* outer magenta */
+}
+.gamePara{
+  font-size: 0px;
+}
+.gamePara-active{
+  margin: auto;
+  padding-top: 100px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*CSS for Tech square and text when it become active on click*/
+.containerTech-active{
+  width: 100%;
+  height: 300px;
+  background: rgba(100, 0, 100, 0.5);
+  border-radius: 25px;
+  box-shadow:
+        0 0 100px 30px #fff,  /* inner white */
+        0 0 100px 60px #f0f; /* outer magenta */
+}
+.techPara{
+  font-size: 0px;
+}
+.techPara-active{
+  margin: auto;
+  padding-top: 100px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*login page css*/
+.login{
+  color: white;
+  text-shadow: 2px 2px 30px #fff;
+}
+.l1{
+  color: white;
+}
+.l2{
+  color: white;
+}
+.or{
+  color: white;
+}
+.back{
+  color: white;
+}
+.signupBtn{
+  color: #CD0074;
+}
+.homeBtn{
+  color: #CD0074;
+}
+.btn{
+  background: rgba(100, 0, 100, 0.5);
+  color: white;
+}
+.btn:hover{
+  background: rgba(200, 0, 200, 0.5);
+  color: white;
+  box-shadow:
+        0 0 100px 30px #fff;
+}
+.divLogin{
+  margin-top: 250px;
+}
+
+/*signup page css*/
+.signup{
+  color: white;
+  text-shadow: 2px 2px 30px #fff;
+}
+.l4{
+  color: white;
+}
+.divSignup{
+  margin-top: 250px;
+}
+
+/*CSS for profile.ejs */
+.well{
+  background: rgba(100, 0, 100, 0.5);
+}
+.uname{
+  color: white;
+}
+.uemail{
+  color: white;
+}
+.profilePara{
+  color: white;
+}
+.page-header{
+  color: white;
+}
+
+/*CSS for profile project specs*/
+.dashboard{
+  color: white;
+}
+
+/*CSS for edit page*/
+.edit{
+  margin-top: 250px;
+}
