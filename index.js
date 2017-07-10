@@ -74,7 +74,7 @@ app.use('/', userRoutes)
 
 
 
-//port (localhost:3000)
+//port (localhost:27017)
 app.listen(port, (err) => {
 	console.log(err || "Server running on port " + port)
 })
